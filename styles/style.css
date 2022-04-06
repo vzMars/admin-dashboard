@@ -45,6 +45,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: minmax(320px, 15%) 5fr;
+  min-height: 100vh;
 }
 
 header {
@@ -115,7 +116,7 @@ header {
   color: #ffffff;
   background-color: #1992d4;
   border: 1px solid #1992d4;
-  border-radius: 30px;
+  border-radius: 25px;
   padding: 0.8rem 2rem;
   cursor: pointer;
   font-size: 1rem;
@@ -166,5 +167,117 @@ li p {
 }
 
 .main-content {
-  /* grid-column: 2; */
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2fr auto;
+  gap: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* margin: 0; */
+  margin-bottom: 1rem;
+}
+
+.main-left {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.main-right {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: min-content;
+  gap: 2rem;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-left: 10px solid #f0b429;
+  border-radius: 10px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 3rem;
+  max-height: 300px;
+}
+
+h4,
+.project-text p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.project-text p {
+  font-size: 1.3rem;
+  max-width: 25rem;
+  color: #808080;
+}
+
+.project-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.announcements,
+.trending {
+  background-color: #ffffff;
+  max-width: 350px;
+  height: min-content;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.announcement-card:not(:last-child) {
+  border-bottom: 2px solid #c9c9c9;
+}
+
+.announcement-card h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.announcement-card p {
+  color: #808080;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 2rem;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 350px;
+}
+
+h6 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.user-card p {
+  margin: 0;
+  color: #808080;
+  font-weight: 300;
 }
