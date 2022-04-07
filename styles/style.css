@@ -45,6 +45,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: minmax(320px, 15%) 5fr;
+  grid-template-rows: min-content;
   min-height: 100vh;
 }
 
@@ -161,6 +162,10 @@ li {
   gap: 2rem;
 }
 
+li:hover {
+  background-color: red;
+}
+
 li p {
   cursor: pointer;
   font-size: 1.5rem;
@@ -176,7 +181,6 @@ li p {
 h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  /* margin: 0; */
   margin-bottom: 1rem;
 }
 
